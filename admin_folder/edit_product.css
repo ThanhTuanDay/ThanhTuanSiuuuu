@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #bdaeae;
+    border-radius: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 2px solid #000000;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #fcc107;
+}
+.edit-button {
+    background-color: #ffc107;
+    color: rgb(0, 0, 0);
+    margin-left: 35px; 
+    margin-bottom: 7px;
+    padding: 8px 16px;
+    border: 1px color black;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.edit-button:hover {
+    background-color: #d9a407;
+}

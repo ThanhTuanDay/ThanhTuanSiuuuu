@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style_admin.css" />
+        <link rel="stylesheet" href="info_user.css" />
+        <link rel="stylesheet" href="add_product.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.mincss">
+    <!--===============================================================================================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+
+        <title>Thông tin khách hàng</title>
+    </head>
+    <body>
+        <!-- start: Sidebar -->
+        <div class="sidebar-overlay" data-dismiss="sidebar"></div>
+        <div class="sidebar">
+            <div class="sidebar-brand-wrapper">
+                <a href="#" class="sidebar-brand">
+                    <a href="index_admin.html">
+                          
+                    </a>                  
+                    <span class="sidebar-brand-name">Feane</span>
+                </a>
+            </div>
+            <div class="sidebar-menu-wrapper">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item-title">
+                        <span class="sidebar-menu-item-title-expanded"
+                            >Quản Lí</span
+                        >
+                        <span class="sidebar-menu-item-title-collapsed">
+                            <i class="ri-more-fill"></i>
+                        </span>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-dashboard-3-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text"
+                                >Sản Phẩm</span
+                            > 
+                            <span class="sidebar-menu-item-link-arrow"
+                                ><i class="ri-arrow-right-s-line"></i
+                            ></span>
+                        </a>
+                        <ul class="sidebar-submenu">
+
+                            <li class="sidebar-submenu-item">
+                                <li class="sidebar-submenu-item">
+                                    <a href="#" class="sidebar-submenu-item-link">
+                                        <span class="sidebar-submenu-item-link-text" onclick="window.location.href='edit_product.html'"
+                                            >Quản lí sản phẩm</span>
+                                    </a>
+    
+                                <li class="sidebar-submenu-item">
+                                    <a href="#" class="sidebar-submenu-item-link">
+                                        <span class="sidebar-submenu-item-link-text" onclick="window.location.href='add_product.html'"
+                                            >Thêm sản phẩm</span>
+                                    </a>
+
+                        <!-- đóng danh sách -->
+                        </ul> 
+                        <!-- đóng danh sách -->
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-apps-2-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text" 
+                                >Người Dùng</span
+                            >
+                            <span class="sidebar-menu-item-link-arrow"
+                                ><i class="ri-arrow-right-s-line"></i
+                            ></span>
+                        </a>
+                        <ul class="sidebar-submenu">
+                            <li class="sidebar-submenu-item">
+                                <a href="#" class="sidebar-submenu-item-link">
+                                    <span class="sidebar-submenu-item-link-text" onclick="window.location.href='info_user.html'"
+                                        >Thông Tin Khách Hàng</span
+                                    >
+                                    <span
+                                        class="sidebar-submenu-item-link-arrow"
+                                        ></span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                </ul>
+                            </li>
+                            <li class="sidebar-submenu-item">
+                                <a href="#" class="sidebar-submenu-item-link">
+                                    <span class="sidebar-submenu-item-link-text" onclick="window.location.href='order.html'"
+                                        >Đơn Hàng</span
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item-title">
+                        <span class="sidebar-menu-item-title-expanded"
+                            >Thống kê</span
+                        >
+                        <span class="sidebar-menu-item-title-collapsed">
+                            <i class="ri-more-fill"></i>
+                        </span>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-dashboard-3-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text" onclick="window.location.href='statistic_product.html'"
+                                >Mặt Hàng</span
+                            >
+                            <span class="sidebar-menu-item-link-arrow"
+                                ></span>
+                        </a>
+                      
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-apps-2-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text" onclick="window.location.href='statistic_user.html'"
+                                >Khách Hàng</span
+                            >
+                            <span class="sidebar-menu-item-link-arrow"
+                                ></span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end: Sidebar -->
+
+        <!-- start: Main -->
+        <div class="main">
+            <div class="topbar">
+
+                <a href="#" class="topbar-brand">
+                    <img
+                        src="https://placehold.co/32x32"
+                        alt=""
+                        class="topbar-brand-image"
+                    />
+                </a>
+                <button
+                    type="button"
+                    class="topbar-button topbar-toggle"
+                    data-toggle="sidebar"
+                >
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <!-- tim kiem -->
+                 
+                <!-- ... -->
+                <div class="topbar-right">
+                    <button
+                        type="button"
+                        class="topbar-button topbar-button-search"
+                        data-toggle="topbar-search"
+                    >
+                        <i class="ri-search-line"></i>
+                    </button>
+                    <div class="dropdown" id="topbar-language-dropdown">
+                        <button
+                            type="button"
+                            class="topbar-button"
+                            data-toggle="dropdown"
+                        >
+                            <img
+                                src="https://flagsapi.com/VN/shiny/64.png"
+                                class="topbar-language-image"
+                            />
+                        </button>
+                        <div class="dropdown-menu">
+                            <button
+                                type="button"
+                                class="dropdown-menu-item"
+                             data-language-image="https://flagsapi.com/VN/shiny/64.png"
+                            >
+                                <img
+                                    src="https://flagsapi.com/VN/shiny/64.png"
+                                    alt=""
+                                    class="dropdown-menu-item-image"
+                                />
+                                <span class="dropdown-menu-item-text"
+                                    >Tiếng Việt</span
+                                >
+                            </button>
+                            <button
+                                type="button"
+                                class="dropdown-menu-item"
+                                data-language-image="https://flagsapi.com/GB/shiny/64.png"
+                            >
+                                <img
+                                    src="https://flagsapi.com/GB/shiny/64.png"
+                                    alt=""
+                                    class="dropdown-menu-item-image"
+                                />
+                                <span class="dropdown-menu-item-text"
+                                    >Tiếng Anh</span
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content">
+                <h2> Thông Tin Khách Hàng</h2>
+                <table class="table table-bordered" id="myTable">
+                    <button id="navigateButton" class="navigation-btn">Thêm Khách Hàng</button>
+
+                    <thead>
+                        <tr class="ex">
+                            <th width="auto">Tên Khách Hàng</th>
+                            <th width="100px;">Giới Tính</th>
+                            <th>Ngày Sinh</th>
+                            <th>Địa Chỉ</th>
+                            <th>Xếp hạng</th>
+                            <th width="5px; !important">Tính Năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Võ Trường</td>
+                            <td>Nam</td>
+                            <td>15/03/2000</td>
+                            <td>273 An Dương Vương, phường 3, Quận 5, Hồ Chí Minh</td>
+                            <td>Kim cương</td>
+                            <td>
+                                <a class="add" title="Lưu Lại" data-toggle="tooltip"><i class="fa fa-floppy-o"
+                                        aria-hidden="true"></i></a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                        <a href="#" class="lock" data-toggle="tooltip" data-placement="top" title="Khóa Tài Khoản">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                        </a>    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Trần Khả Ái</td>
+                            <td>Nữ</td>
+                            <td>12/02/1999</td>
+                            <td>155-157 Trần Quốc Thảo, Quận 3, Hồ Chí Minh</td>
+        
+                            <td>Bạc</td>
+                            <td>
+                                <a class="add" title="Lưu Lại" data-toggle="tooltip"><i class="fa fa-floppy-o"
+                                        aria-hidden="true"></i></a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                        <a href="#" class="lock" data-toggle="tooltip" data-placement="top" title="Khóa Tài Khoản">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                        </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nguyễn Tấn Trung</td>
+                            <td>Nam</td>
+                            <td>07/10/1997</td>
+                            <td>6 Nguyễn Lương Bằng, Tân Phú, Quận 7, Hồ Chí Minh</td>
+        
+                            <td>Vàng</td>
+                            <td>
+                                <a class="add" title="Lưu Lại" data-toggle="tooltip"><i class="fa fa-floppy-o"
+                                        aria-hidden="true"></i></a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                        <a href="#" class="lock" data-toggle="tooltip" data-placement="top" title="Khóa Tài Khoản">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                        </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Trần Trúc An</td>
+                            <td>Nữ</td>
+                            <td>22/12/1999</td>
+                            <td>Số 3 Hòa Bình, Phường 3, Quận 11, Hồ Chí Minh</td>
+        
+                            <td>Kim cương</td>
+                            <td>
+                                <a class="add" title="Lưu Lại" data-toggle="tooltip"><i class="fa fa-floppy-o"
+                                        aria-hidden="true"></i></a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                        <a href="#" class="lock" data-toggle="tooltip" data-placement="top" title="Khóa Tài Khoản">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                        </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Phạm Thu Cúc</td>
+                            <td>Nữ</td>
+                            <td>02/06/1998</td>
+                            <td>19 Đường Nguyễn Hữu Thọ, Tân Hưng, Quận 7, Hồ Chí Minh</td>
+        
+                            <td>Vàng</td>
+                            <td>
+                                <a class="add" title="Lưu Lại" data-toggle="tooltip"><i class="fa fa-floppy-o"
+                                        aria-hidden="true"></i></a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                        <a href="#" class="lock" data-toggle="tooltip" data-placement="top" title="Khóa Tài Khoản">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                        </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nguyễn Thị Kim Ngân</td>
+                            <td>Nữ</td>
+                            <td>06/04/1998</td>
+                            <td>Số 13, Tân Thuận Đông, Quận 7, Hồ Chí Minh</td>
+                            <td>Bạc</td>
+                            <td>
+                                <a class="add" title="Lưu Lại" data-toggle="tooltip"><i class="fa fa-floppy-o"
+                                        aria-hidden="true"></i></a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                        <a href="#" class="lock" data-toggle="tooltip" data-placement="top" title="Khóa Tài Khoản">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                        </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nguyễn Anh Tuấn</td>
+                            <td>Nam</td>
+                            <td>23/07/1996</td>
+                            <td>59C Nguyễn Đình Chiểu, Quận 3, Hồ Chí Minh</td>
+                            <td>Bạc</td>
+                            <td>
+                                <a class="add" title="Lưu Lại" data-toggle="tooltip"><i class="fa fa-floppy-o"
+                                        aria-hidden="true"></i></a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                        <a href="#" class="lock" data-toggle="tooltip" data-placement="top" title="Khóa Tài Khoản">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                        </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Huỳnh Cẩm Thu</td>
+                            <td>Nữ</td>
+                            <td>19/01/1997</td>
+                            <td>764 Võ Văn Kiệt, Phường 1, Quận 5, Hồ Chí Minh</td>
+                            <td>Vàng</td>
+                            <td>
+                                <a class="add" title="Lưu Lại" data-toggle="tooltip"><i class="fa fa-floppy-o"
+                                        aria-hidden="true"></i></a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                        <a href="#" class="lock" data-toggle="tooltip" data-placement="top" title="Khóa Tài Khoản">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                        </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nguyễn Xuân Ly</td>
+                            <td>Nữ</td>
+                            <td>30/10/1999</td>
+                            <td>Đường Kênh T2 Ấp 6 Xã Hưng Long Huyện Bình Chánh, Hưng Long, Bình Chánh, Hồ Chí Minh</td>
+                            <td>Kim cương</td>
+                            <td>
+                                <a class="add" title="Lưu Lại" data-toggle="tooltip"><i class="fa fa-floppy-o"
+                                        aria-hidden="true"></i></a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip"><i class="fa fa-pencil"
+                                        aria-hidden="true"></i></a>
+                                        <a href="#" class="lock" data-toggle="tooltip" data-placement="top" title="Khóa Tài Khoản">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                        </a>
+                            </td>
+                        </tr>
+                        <tr>    
+                            <td>Hoàng Xuân Nam</td>
+                            <td>Nữ</td>
+                            <td>20/7/1989</td>
+                            <td>37 Vạn Tượng, Phường 13, Quận 5, Hồ Chí Minh</td>
+                            <td>Vàng</td>
+                            <td>
+                                <a class="add" title="Lưu Lại" data-toggle="tooltip">
+                                    <i class="fa fa-floppy-o" aria-hidden="true"></i>
+                                </a>
+                                <a class="edit" title="Sửa" data-toggle="tooltip">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="lock" data-toggle="tooltip" data-placement="top" title="Khóa Tài Khoản">
+                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <ul  class="pagination-container">
+                    <button class="pagination-btn" onclick="window.location.href='info_user.html'"><<</button>
+                    <button class="pagination-btn" onclick="window.location.href='info_user.html'">1</button>
+                    <button class="pagination-btn" onclick="window.location.href='info_user.html'">2</button>
+                    <button class="pagination-btn" onclick="window.location.href='info_user.html'">3</button>
+                    <button class="pagination-btn" onclick="window.location.href='info_user.html'">4</button>
+                    <button class="pagination-btn" onclick="window.location.href='info_user.html'">5</button> 
+                    <button class="pagination-btn" onclick="window.location.href='info_user.html'">>></button>
+                </ul>
+
+            </div>
+        </div>  
+
+        <!-- end: Main -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.7"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.10"></script>
+        <script src="script_admin.js"></script>
+        <script src="info_user.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Popper.js (để hỗ trợ Tooltip của Bootstrap) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- SweetAlert (cho cảnh báo thân thiện) -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+    </body>
+</html>

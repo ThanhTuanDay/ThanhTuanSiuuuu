@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style_admin.css" />
+        <link rel="stylesheet" href="order_details.css" />
+        <title>Chi tiết đơn hàng</title>
+    </head>
+    <body>
+        <!-- start: Sidebar -->
+        <div class="sidebar-overlay" data-dismiss="sidebar"></div>
+        <div class="sidebar">
+            <div class="sidebar-brand-wrapper">
+                <a href="#" class="sidebar-brand">
+                    <a href="index_admin.html">
+                          
+                    </a>                  
+                    <span class="sidebar-brand-name">Feane</span>
+                </a>
+            </div>
+            <div class="sidebar-menu-wrapper">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item-title">
+                        <span class="sidebar-menu-item-title-expanded"
+                            >Quản Lí</span
+                        >
+                        <span class="sidebar-menu-item-title-collapsed">
+                            <i class="ri-more-fill"></i>
+                        </span>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-dashboard-3-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text"
+                                >Sản Phẩm</span
+                            > 
+                            <span class="sidebar-menu-item-link-arrow"
+                                ><i class="ri-arrow-right-s-line"></i
+                            ></span>
+                        </a>
+                        <ul class="sidebar-submenu">
+
+                            <li class="sidebar-submenu-item">
+                                <li class="sidebar-submenu-item">
+                                    <a href="#" class="sidebar-submenu-item-link">
+                                        <span class="sidebar-submenu-item-link-text" onclick="window.location.href='edit_product.html'"
+                                            >Quản lí sản phẩm</span>
+                                    </a>
+    
+                                <li class="sidebar-submenu-item">
+                                    <a href="#" class="sidebar-submenu-item-link">
+                                        <span class="sidebar-submenu-item-link-text" onclick="window.location.href='add_product.html'"
+                                            >Thêm sản phẩm</span>
+                                    </a>
+
+                        <!-- đóng danh sách -->
+                        </ul> 
+                        <!-- đóng danh sách -->
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-apps-2-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text" 
+                                >Người Dùng</span
+                            >
+                            <span class="sidebar-menu-item-link-arrow"
+                                ><i class="ri-arrow-right-s-line"></i
+                            ></span>
+                        </a>
+                        <ul class="sidebar-submenu">
+                            <li class="sidebar-submenu-item">
+                                <a href="#" class="sidebar-submenu-item-link">
+                                    <span class="sidebar-submenu-item-link-text" onclick="window.location.href='info_user.html'"
+                                        >Thông Tin Khách Hàng</span
+                                    >
+                                    <span
+                                        class="sidebar-submenu-item-link-arrow"
+                                        ></span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                </ul>
+                            </li>
+                            <li class="sidebar-submenu-item">
+                                <a href="#" class="sidebar-submenu-item-link">
+                                    <span class="sidebar-submenu-item-link-text" onclick="window.location.href='order.html'"
+                                        >Đơn Hàng</span
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item-title">
+                        <span class="sidebar-menu-item-title-expanded"
+                            >Thống kê</span
+                        >
+                        <span class="sidebar-menu-item-title-collapsed">
+                            <i class="ri-more-fill"></i>
+                        </span>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-dashboard-3-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text" onclick="window.location.href='statistic_product.html'"
+                                >Mặt Hàng</span
+                            >
+                            <span class="sidebar-menu-item-link-arrow"
+                                ></span>
+                        </a>
+                      
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-apps-2-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text" onclick="window.location.href='statistic_user.html'"
+                                >Khách Hàng</span
+                            >
+                            <span class="sidebar-menu-item-link-arrow"
+                                ></span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end: Sidebar -->
+
+        <!-- start: Main -->
+        <div class="main">
+            <div class="topbar">
+
+                <a href="#" class="topbar-brand">
+                    <img
+                        src="https://placehold.co/32x32"
+                        alt=""
+                        class="topbar-brand-image"
+                    />
+                </a>
+                <button
+                    type="button"
+                    class="topbar-button topbar-toggle"
+                    data-toggle="sidebar"
+                >
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <!-- tim kiem -->
+                 
+                <!-- ... -->
+                <div class="topbar-right">
+                    <button
+                        type="button"
+                        class="topbar-button topbar-button-search"
+                        data-toggle="topbar-search"
+                    >
+                        <i class="ri-search-line"></i>
+                    </button>
+                    <div class="dropdown" id="topbar-language-dropdown">
+                        <button
+                            type="button"
+                            class="topbar-button"
+                            data-toggle="dropdown"
+                        >
+                            <img
+                                src="https://flagsapi.com/VN/shiny/64.png"
+                                class="topbar-language-image"
+                            />
+                        </button>
+                        <div class="dropdown-menu">
+                            <button
+                                type="button"
+                                class="dropdown-menu-item"
+                             data-language-image="https://flagsapi.com/VN/shiny/64.png"
+                            >
+                                <img
+                                    src="https://flagsapi.com/VN/shiny/64.png"
+                                    alt=""
+                                    class="dropdown-menu-item-image"
+                                />
+                                <span class="dropdown-menu-item-text"
+                                    >Tiếng Việt</span
+                                >
+                            </button>
+                            <button
+                                type="button"
+                                class="dropdown-menu-item"
+                                data-language-image="https://flagsapi.com/GB/shiny/64.png"
+                            >
+                                <img
+                                    src="https://flagsapi.com/GB/shiny/64.png"
+                                    alt=""
+                                    class="dropdown-menu-item-image"
+                                />
+                                <span class="dropdown-menu-item-text"
+                                    >Tiếng Anh</span
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content">
+                
+    <div class="order-container">
+        <header class="order-header">
+            <h1>Chi Tiết Đơn Hàng</h1>
+            <p class="order-id">Mã đơn hàng: <span id="order-id">#KH001</span></p>
+            <p class="order-date">Ngày đặt hàng: <span id="order-date">2024-05-08</span></p>
+        </header>
+
+        <!-- Thông tin khách hàng -->
+        <section class="customer-info">
+            <h2>Thông Tin Khách Hàng</h2>
+            <table>
+                <tr>
+                    <td>Tên Khách Hàng:</td>
+                    <td><span id="customer-name">Nguyễn Văn A</span></td>
+                </tr>
+                <tr>
+                    <td>Địa Chỉ:</td>
+                    <td><span id="customer-address">123 Đường ABC, Quận 1, TP.HCM</span></td>
+                </tr>
+                <tr>
+                    <td>Số Điện Thoại:</td>
+                    <td><span id="customer-phone">0987654321</span></td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Chi tiết sản phẩm -->
+        <section class="order-items">
+            <h2>Sản Phẩm Đặt Mua</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <!-- <th>Mã kiểu</th> -->
+                        <th>Tên Sản Phẩm</th>
+                        <th>Số Lượng</th>
+                        <th>Đơn Giá</th>
+                        <th>Thành Tiền</th>
+                    </tr>
+                </thead>
+                <tbody id="order-items-list">
+                    <tr class="product-item">
+                        <!-- <td>FA5212-011</td> -->
+                        <td>Pizza hải sản</td>
+                        <td>2</td>
+                        <td>159000 VND</td>
+                        <td>318000 VND</td>
+                    </tr>
+                    <tr class="product-item">
+                        <!-- <td>FA5212-011</td> -->
+                        <td>Burger bò đặc biệt</td>
+                        <td>1</td>
+                        <td>110000 VND</td>
+                        <td>110000 VND</td>
+                    </tr>
+                    <tr class="product-item">
+                        <!-- <td>FA5212-011</td> -->
+                        <td>Khoai tây chiên</td>
+                        <td>2</td>
+                        <td>40000 VND</td>
+                        <td>80000 VND</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tóm tắt đơn hàng -->
+        <section class="order-summary">
+            <h2>Tóm Tắt Đơn Hàng</h2>
+            <table>
+                <tr>
+                    <td style="width: 301.61px;">Tổng Tiền Sản Phẩm:</td>
+                    <td><span id="total-product">508000 VND</span></td>
+                </tr>
+                <tr>
+                    <td>Phí Vận Chuyển:</td>
+                    <td><span id="shipping-fee">20000 VND</span></td>
+                </tr>
+                <tr>
+                    <td >Giảm Giá:</td>
+                    <td><span id="discount">-49000 VND</span></td>
+                </tr>
+                <tr class="total-row">
+                    <td style="color: #ff0000; font-size: 18px; font-weight: bold;">Tổng Tiền Thanh Toán:</td>
+                    <td style="color: #ff0000; font-size: 18px; font-weight: bold;"><span id="total-payment">479000 VND</span></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Thông tin giao hàng -->
+        <section class="shipping-info">
+            <h2 style="color: #000000; font-size: 20px;padding-bottom: 8px; margin-bottom: 10px; margin-top: 20px; border-bottom: 2px solid #e5e5e5;">Thông Tin Giao Hàng</h2>
+            <table>
+                <tr>
+                    <td style="width: 301.61px; padding: 10px;">Phương Thức Vận Chuyển:</td>
+                    <td><span id="shipping-method">Giao hàng tiêu chuẩn</span></td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Thời Gian Dự Kiến:</td>
+                    <td><span id="delivery-time">2024-05-08</span></td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Trạng Thái Đơn Hàng:</td>
+                    <td><span id="order-status">Đã hoàn thành</span></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Footer -->
+        <!-- <footer class="order-footer">
+            <p>Cảm ơn bạn đã mua sắm tại cửa hàng của chúng tôi!</p>
+        </footer> -->
+    </div>
+            </div>
+        </div>
+
+        <!-- end: Main -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.7"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.10"></script>
+        <script src="script_admin.js"></script>
+        <script src="order_details.js"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+
+.search-btn{
+    margin-top: 4px;
+}
+.container {
+    max-width: 5000px;
+    padding: 40px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input, textarea {   
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ff0000;  
+    border-radius: 4px;
+}
+
+h1 {
+    font-family:Verdana, Tahoma, sans-serif ;
+    text-align: center;
+    margin-bottom: 20px;   
+    font-weight: bold;
+}
+#productForm button {
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  
+}
+
+/* Căn chỉnh các label và input */
+#productForm label {
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+#productForm input,
+#productForm textarea {
+    padding: 10px;
+    margin-bottom: 20px; /* Tạo khoảng cách dưới input */
+    border: 1px solid rgb(87, 77, 77); /* Đường viền cho các input */
+    border-radius: 4px; /* Góc bo tròn cho input */
+    font-size: 16px;
+    width: 100%; /* Đảm bảo các input chiếm toàn bộ chiều rộng */
+}
+/* Căn chỉnh nút thêm sản phẩm */
+#productForm button:hover {
+    background-color: #ddab14; /* Thay đổi màu nền khi hover */
+}

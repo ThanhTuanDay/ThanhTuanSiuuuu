@@ -1,0 +1,96 @@
+/* Đặt lại các thuộc tính mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.product-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* Giữ khoảng cách giữa ảnh và thông tin */
+  max-width: 1100px; /* Kích thước tối đa của phần tử */
+  margin: 40px auto; /* Đặt khoảng cách từ trên xuống và căn giữa */
+}
+
+.product-image img {
+  width: 500px; /* Tăng kích thước ảnh */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  left: 2;
+}
+
+.product-info {
+  max-width: 900px; /* Tăng độ rộng của thông tin sản phẩm */
+}
+
+.product-info h1 {
+  font-size: 36px; /* Tăng kích thước chữ của tên sản phẩm */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 28px; /* Tăng kích thước chữ của giá */
+  color: #e67e22;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.description,
+.ingredients {
+  font-size: 18px; /* Tăng kích thước chữ của mô tả và thành phần */
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.ingredients strong {
+  font-weight: bold;
+}
+
+.purchase-section {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Tăng khoảng cách giữa số lượng và nút mua */
+}
+
+.quantity-input {
+  width: 60px; /* Tăng kích thước input số lượng */
+  padding: 8px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.nav-bar {
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.add-to-cart {
+  margin-top: 5px;
+  background-color: orange;
+  color: white;
+  padding: 7px 13px;
+  border: none;
+  border-radius: 15px;
+}
+.count {
+  width: 100px;
+  border-radius: 10px;
+
+  padding: 3px 5px;
+  border: 1px solid #e3d7d7;
+  outline: none;
+}

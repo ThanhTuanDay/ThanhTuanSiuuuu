@@ -1,0 +1,136 @@
+.product-filter {
+  float: left;
+  padding: 10px;
+  margin-left: -110; /* Điều chỉnh lại khoảng cách với bên trái */
+  position: relative; /* Nếu cần điều chỉnh vị trí chính xác hơn */
+}
+
+.product-filter h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-filter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-filter label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-filter select,
+.product-filter button {
+  margin-top: 5px;
+  padding: 8px;
+  font-size: 16px;
+  width: 90%;
+}
+
+.product-filter button {
+  background-color: rgb(222, 150, 16);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* Đảm bảo liên kết không có gạch dưới */
+.btn-container {
+  text-decoration: none; /* Loại bỏ gạch dưới của liên kết */
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+/* CSS cho các nút */
+.button {
+  background-color: white; /* Màu nền của nút là trắng */
+  color: black; /* Màu chữ của nút là đen */
+  border: 1px solid black; /* Nút có viền 1px, màu đen */
+  padding: 10px 25px; /* Khoảng cách trong nút, 15px trên dưới và 30px trái phải */
+  font-size: 16px; /* Kích thước chữ trong nút là 18px */
+  width: 70px; /* Chiều rộng cố định của nút là 100px */
+  height: 50px; /* Chiều cao cố định của nút là 50px */
+  cursor: pointer; /* Khi di chuột lên nút, con trỏ sẽ thay đổi thành con trỏ nhấn */
+  margin: 5px; /* Khoảng cách xung quanh nút, có thể giữa các nút hoặc với các phần tử khác */
+  border-radius: 100px; /* Bo tròn các góc của nút, với bán kính là 30px */
+  transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu nền và màu chữ trong vòng 0.3 giây */
+
+  /* Flexbox để căn chỉnh nội dung trong nút */
+
+  justify-content: center; /* Lý tưởng để căn trái nội dung theo chiều ngang, nhưng sẽ không có tác dụng trong trường hợp này */
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+}
+
+/* Hiệu ứng hover khi rê chuột lên nút */
+.button:hover {
+  background-color: black; /* Màu nền khi hover */
+  color: white; /* Màu chữ khi hover */
+}
+
+/*căn chỉnh thực đơn*/
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown li {
+  float: none;
+  display: list-item;
+  text-align: left;
+}
+.dropdown li:hover {
+  background-color: #555; /* Màu nền khi hover */
+}
+nav ul li:hover .dropdown {
+  display: block;
+}
+/* Thanh tìm kiếm*/
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Form chứa input và nút tìm kiếm */
+
+/* Ô nhập liệu (input) */
+.search-input {
+  background-color: white;
+  border-radius: 20px; /* Bo tròn góc */
+  padding: 5px 15px; /* Khoảng cách bên trong */
+  width: 200px; /* Chiều rộng nhỏ gọn */
+  font-size: 14px; /* Kích thước chữ vừa phải */
+  outline: none; /* Xóa viền mặc định khi focus */
+  transition: all 0.3s ease; /* Hiệu ứng mượt mà khi hover hoặc focus */
+}
+
+/* Hiệu ứng khi người dùng hover hoặc focus */
+
+.search-btn i {
+  font-size: 18px; /* Kích thước icon */
+}

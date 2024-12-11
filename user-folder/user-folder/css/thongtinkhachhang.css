@@ -1,0 +1,116 @@
+.list-group-item.active {
+    background-color: #ffc107;
+}
+/* end common class */
+.top-status ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.top-status ul li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 8px solid #ddd;
+    box-shadow: 1px 1px 10px 1px #ddd inset;
+    margin: 10px 5px;
+}
+
+.top-status ul li.active-1 {
+    border-color: #4867e0;
+    box-shadow: 1px 1px 20px 1px #7593db inset;
+}
+.top-status ul li.active-2 {
+    border-color: #ffc107;
+    box-shadow: 1px 1px 20px 1px #ffc107 inset;
+}
+.top-status ul li.active-3 {
+    border-color: #16aa40;
+    box-shadow: 1px 1px 20px 1px #98f7d6 inset;
+}
+.top-status ul li.active-4 {
+    border-color: #f24c4c;
+    box-shadow: 1px 1px 20px 1px #e06969 inset;
+}
+
+
+.btn-xem-chi-tiet {
+    background-color: rgb(244, 82, 82); /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+    font-size: 13px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    padding: 7px 40px; /* Khoảng cách bên trong */
+    border: none; /* Xóa viền */
+    border-radius: 25px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ dạng tay khi hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng */
+    transition: all 0.3s ease; /* Hiệu ứng mượt */
+}
+
+.btn-xem-chi-tiet:hover {
+    background-color: rgb(249, 171, 55); /* Đổi màu nền khi hover */
+    transform: translateY(-2px); /* Nút nổi lên */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Tăng bóng khi hover */
+}
+
+.btn-xem-chi-tiet:active {
+    transform: translateY(1px); /* Nhấn nút xuống */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2); /* Giảm bóng khi nhấn */
+}
+
+.a-chinh-sua-thong-tin{
+    background-color: rgb(244, 82, 82); /* Màu nền xanh dương */
+    color: #fff; /* Màu chữ trắng */
+    font-size: 15px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    padding: 11px 40px; /* Khoảng cách bên trong */
+    border: none; /* Xóa viền */
+    border-radius: 20px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ dạng tay khi hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng */
+    transition: all 0.3s ease; /* Hiệu ứng mượt */
+}
+
+.a-chinh-sua-thong-tin:hover {
+    background-color: rgb(249, 171, 55); /* Đổi màu nền khi hover */
+    transform: translateY(-5px); /* Nút nổi lên */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Tăng bóng khi hover */
+    color: #fff; /* Màu chữ trắng */
+}
+
+.a-chinh-sua-thong-tin:active {
+    transform: translateY(3px); /* Nhấn nút xuống */
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2); /* Giảm bóng khi nhấn */
+    color: #fff; /* Màu chữ trắng */
+}
+
+
+.btn-chinh-sua-thong-tin {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(249, 171, 55);;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* button:hover {
+    background-color: #45a049;
+} */
+
+
+/* Cửa sổ modal */

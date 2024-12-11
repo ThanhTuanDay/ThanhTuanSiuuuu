@@ -1,0 +1,7 @@
+body {
+    background-image: url('bg_admin.jpg'); /* Thay 'background.jpg' bằng đường dẫn tới hình ảnh của bạn */
+    background-size: cover; /* Để ảnh phủ toàn bộ màn hình */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    background-attachment: fixed; /* Hình ảnh cố định khi cuộn trang */
+    background-position: center; /* Căn giữa hình ảnh */
+}

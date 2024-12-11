@@ -1,0 +1,106 @@
+/* Main Content */
+.main-content {
+  padding: 20px;
+  background-color: #ffffff; /* Nền xám đen */
+  min-height: 100vh;
+  color: #fcc107; /* Chữ vàng cam */
+}
+
+header h1 {
+  color: #fcc107; /* Chữ vàng cam */
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header h1 .main-content-title {
+  color: #ffffff; /* Chữ vàng sáng hơn để nổi bật */
+}
+
+/* Lọc đơn hàng */
+.filter-orders {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #000; /* Thêm viền ngoài cho bảng */
+}
+
+.filter-orders h2 {
+  color: #fcc107;
+  margin-bottom: 15px;
+}
+
+.filter-orders form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.filter-orders form input,
+.filter-orders form select {
+  width: 99%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  background-color: #fffefe; /* Nền đen */
+  color: #000000; /* Chữ vàng cam */
+  border-radius: 10px;
+}
+
+.filter-orders form button {
+  background-color: #fcc107; /* Nút vàng cam */
+  color: #000; /* Chữ đen trên nền vàng */
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-orders form button:hover {
+  background-color: #fcc107; /* Nút vàng sáng hơn khi hover */
+}
+
+/* Bảng đơn hàng */
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: whitesmoke; /* Nền xám đen */
+  color: black; /* Chữ vàng cam */
+}
+
+.order-table table thead {
+  background-color: #fcc107; /* Nền vàng cam */
+  color: #000; /* Chữ đen */
+}
+
+.order-table table th,
+.order-table table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ffffff; /* Viền xám đậm */
+}
+
+.order-table table tbody tr:hover {
+  background-color: #f5ecec; /* Nền đậm hơn khi hover */
+}
+
+.order-table .order-status {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #fcc107; /* Viền vàng cam */
+  background-color: #000; /* Nền đen */
+  color: #fcc107; /* Chữ vàng cam */
+  font-weight: bold;
+}
+
+.view-btn i {
+  margin-right: 15px;
+}
+
+.view-btn:hover {
+  color: #ffd27f; /* Chữ vàng sáng hơn khi hover */
+}

@@ -1,0 +1,21 @@
+/* Nút chuyển trang */
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff; /* Màu nền nút */
+  color: white; /* Màu chữ */
+  border: none; /* Không viền */
+  border-radius: 5px; /* Bo tròn góc */
+  cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua */
+  transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+/* Thay đổi màu khi hover */
+.btn:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+}
+
+/* Liên kết không có gạch dưới */
+.btn-link {
+  text-decoration: none; /* Loại bỏ gạch dưới của liên kết */
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style_admin.css" />
+        <link rel="stylesheet" href="statistic_product.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>Thống kê sản phẩm</title>
+    </head>
+    <body>
+        <!-- start: Sidebar -->
+        <div class="sidebar-overlay" data-dismiss="sidebar"></div>
+        <div class="sidebar">
+            <div class="sidebar-brand-wrapper">
+                <a href="#" class="sidebar-brand">
+                    <a href="index_admin.html">
+                          
+                    </a>                  
+                    <span class="sidebar-brand-name">Feane</span>
+                </a>
+            </div>
+            <div class="sidebar-menu-wrapper">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item-title">
+                        <span class="sidebar-menu-item-title-expanded"
+                            >Quản Lí</span
+                        >
+                        <span class="sidebar-menu-item-title-collapsed">
+                            <i class="ri-more-fill"></i>
+                        </span>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-dashboard-3-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text"
+                                >Sản Phẩm</span
+                            > 
+                            <span class="sidebar-menu-item-link-arrow"
+                                ><i class="ri-arrow-right-s-line"></i
+                            ></span>
+                        </a>
+                        <ul class="sidebar-submenu">
+
+                            <li class="sidebar-submenu-item">
+                                <li class="sidebar-submenu-item">
+                                    <a href="#" class="sidebar-submenu-item-link">
+                                        <span class="sidebar-submenu-item-link-text" onclick="window.location.href='edit_product.html'"
+                                            >Quản lí sản phẩm</span>
+                                    </a>
+    
+                                <li class="sidebar-submenu-item">
+                                    <a href="#" class="sidebar-submenu-item-link">
+                                        <span class="sidebar-submenu-item-link-text" onclick="window.location.href='add_product.html'"
+                                            >Thêm sản phẩm</span>
+                                    </a>
+                        <!-- đóng danh sách -->
+                        </ul> 
+                        <!-- đóng danh sách -->
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-apps-2-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text" 
+                                >Người Dùng</span
+                            >
+                            <span class="sidebar-menu-item-link-arrow"
+                                ><i class="ri-arrow-right-s-line"></i
+                            ></span>
+                        </a>
+                        <ul class="sidebar-submenu">
+                            <li class="sidebar-submenu-item">
+                                <a href="#" class="sidebar-submenu-item-link">
+                                    <span class="sidebar-submenu-item-link-text" onclick="window.location.href='info_user.html'"
+                                        >Thông Tin Khách Hàng</span
+                                    >
+                                    <span
+                                        class="sidebar-submenu-item-link-arrow"
+                                        ></span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                </ul>
+                            </li>
+                            <li class="sidebar-submenu-item">
+                                <a href="#" class="sidebar-submenu-item-link">
+                                    <span class="sidebar-submenu-item-link-text" onclick="window.location.href='order.html'"
+                                        >Đơn Hàng</span
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item-title">
+                        <span class="sidebar-menu-item-title-expanded"
+                            >Thống kê</span
+                        >
+                        <span class="sidebar-menu-item-title-collapsed">
+                            <i class="ri-more-fill"></i>
+                        </span>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-dashboard-3-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text" onclick="window.location.href='statistic_product.html'"
+                                >Mặt Hàng</span
+                            >
+                            <span class="sidebar-menu-item-link-arrow"
+                                ></span>
+                        </a>
+                      
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="#" class="sidebar-menu-item-link">
+                            <span class="sidebar-menu-item-link-icon"
+                                ><i class="ri-apps-2-line"></i
+                            ></span>
+                            <span class="sidebar-menu-item-link-text" onclick="window.location.href='statistic_user.html'"
+                                >Khách Hàng</span
+                            >
+                            <span class="sidebar-menu-item-link-arrow"
+                                ></span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end: Sidebar -->
+
+        <!-- start: Main -->
+        <div class="main">
+            <div class="topbar">
+
+                <a href="#" class="topbar-brand">
+                    <img
+                        src="https://placehold.co/32x32"
+                        alt=""
+                        class="topbar-brand-image"
+                    />
+                </a>
+                <button
+                    type="button"
+                    class="topbar-button topbar-toggle"
+                    data-toggle="sidebar"
+                >
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <!-- tim kiem -->
+                 
+                <!-- ... -->
+                <div class="topbar-right">
+                    <button
+                        type="button"
+                        class="topbar-button topbar-button-search"
+                        data-toggle="topbar-search"
+                    >
+                        <i class="ri-search-line"></i>
+                    </button>
+                    <div class="dropdown" id="topbar-language-dropdown">
+                        <button
+                            type="button"
+                            class="topbar-button"
+                            data-toggle="dropdown"
+                        >
+                            <img
+                                src="https://flagsapi.com/VN/shiny/64.png"
+                                class="topbar-language-image"
+                            />
+                        </button>
+                        <div class="dropdown-menu">
+                            <button
+                                type="button"
+                                class="dropdown-menu-item"
+                             data-language-image="https://flagsapi.com/VN/shiny/64.png"
+                            >
+                                <img
+                                    src="https://flagsapi.com/VN/shiny/64.png"
+                                    alt=""
+                                    class="dropdown-menu-item-image"
+                                />
+                                <span class="dropdown-menu-item-text"
+                                    >Tiếng Việt</span
+                                >
+                            </button>
+                            <button
+                                type="button"
+                                class="dropdown-menu-item"
+                                data-language-image="https://flagsapi.com/GB/shiny/64.png"
+                            >
+                                <img
+                                    src="https://flagsapi.com/GB/shiny/64.png"
+                                    alt=""
+                                    class="dropdown-menu-item-image"
+                                />
+                                <span class="dropdown-menu-item-text"
+                                    >Tiếng Anh</span
+                                >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content">
+
+
+                <div class="container">
+                    <div class="header">
+                        <h1>Thống Kê Đơn Hàng</h1>
+                            </div>
+                                <div class="filter">
+                                <div class="filter-item">
+                                <label for="start-date">Ngày bắt đầu</label>
+                                <input type="date" id="start-date" value="2024-01-01">
+                                </div>
+                         <div class="filter-item">
+                              <label for="end-date">Ngày kết thúc</label>
+                               <input type="date" id="end-date" value="2024-12-31">
+                        </div>
+                        <div class="filter-item" style="align-self: flex-end;">
+                                    <button id="apply-filter">Lọc dữ liệu</button>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                         <h3>Tổng số đơn hàng trong năm 2024 </h3>
+                         <canvas id="orderChart"></canvas>
+                        </div>
+                    </div>
+                    
+                        <!------------------------------------------------------->
+                    
+                        <div class="container">
+                            <h1>Thống Kê Mặt Hàng</h1>
+
+            <!-- Bảng mặt hàng -->
+            <table >
+                <thead>
+                    <tr>
+                        <th style="background-color: #fcc107; color: rgb(0, 0, 0);">Tên mặt hàng</th>
+                        <th style="background-color: #fcc107; color: rgb(0, 0, 0);">Số lượng bán</th>
+                        <th style="background-color: #fcc107; color: rgb(0, 0, 0);">Giá (VND)</th>
+                        <th style="background-color: #fcc107; color: rgb(0, 0, 0);">Thành tiền (VND)</th>
+                        <th style="background-color: #fcc107; color: rgb(0, 0, 0);">Hóa đơn</th>
+                    </tr>
+                </thead>
+                <tbody id="product-table-body">
+                    <!-- Dữ liệu mặt hàng sẽ được thêm động -->
+                </tbody>
+            </table>
+
+            <!-- Tổng kết -->
+            <div class="summary">
+                <p><strong>Tổng doanh thu năm 2024:</strong> <span id="total-revenue"></span> VND</p>
+                <p><strong>Mặt hàng bán chạy nhất:</strong> <span id="best-seller"></span></p>
+                <p><strong>Mặt hàng bán ế nhất:</strong> <span id="worst-seller"></span></p>
+            </div>
+
+                    </div>
+                </div>
+
+                <!-- end: Main -->
+
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.7"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.10"></script>
+        <script src="script_admin.js"></script>
+        <script src="statistic_product.js"></script>
+    </body>
+</html>

@@ -1,0 +1,165 @@
+    
+  thead tr th{
+      color: rgb(0, 0, 0);
+      font-size: 17px;
+      font-weight: 00;
+      background: #fcc107;
+      text-align: center;
+  }
+  tbody tr td{
+      text-align: left;
+      color: black;
+      font-weight: 600;
+  } 
+  .table-title {
+      padding: 10px;
+      margin: 0 0 10px;
+  }
+  .table-title h2 {
+      margin: 6px 0 0;
+      font-size: 22px;
+  }
+  .table-title .add-new {
+      float: right;
+  height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  text-shadow: none;
+  min-width: 10px;
+  border-radius: 50px;
+  line-height: 13px;
+  }
+.table-title .add-new i {
+  margin-right: 4px;
+}
+  table.table {
+      table-layout: fixed;
+      margin: 20px;
+      margin-right: 20px;
+  }
+  table.table tr th, table.table tr td {
+      border-color: #000000;
+  }
+  table.table th i {
+      font-size: 10px;
+      margin: 0 5px;
+      cursor: pointer;  
+  }
+  table.table th:last-child {
+      width: 100px;
+  }
+  table.table td a {
+  cursor: pointer;
+      display: inline-block;
+      margin: 0 5px;
+  min-width: 24px;
+  }    
+table.table td a.add {
+      color: #04ff00;
+  }
+  table.table td a.edit {
+      color: rgb(91, 83, 83);
+  }
+  table.table td a.delete {
+      color: #d90e0e;
+  }
+  table.table td i {
+      font-size: 15px;
+  }
+table.table td a.add i {            
+      font-size: 15px;
+    margin-right: -1px;
+      position: relative;
+      top: 3px;
+  }    
+  table.table .form-control {
+      height: 32px;
+      line-height: 32px;
+      box-shadow: none;
+      border-radius: 2px;
+  }
+table.table .form-control.error {
+  border-color: #f50000;
+}
+table.table td .add {
+  display: none;
+}
+ul li a:hover{
+    
+    text-decoration: none;
+}   
+ul a:hover{
+    
+    text-decoration: none;
+}   
+h2 {
+    font-family:Verdana, Tahoma, sans-serif ;
+    text-align: center;
+    margin-bottom: 20px;   
+    font-weight: bold;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+/* Hiệu ứng hover và focus */
+select:hover {
+    border-color: #000000;
+}
+
+select:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.navigation-btn {
+  background-color: #fcc107; /* Màu nền */
+  color: rgb(0, 0, 0); /* Màu chữ */
+  border: 1px solid #000000; /* Bỏ viền */
+  margin-left: 25px;
+  padding: 10px 20px; /* Căn chỉnh kích thước */
+  font-size: 16px; /* Kích thước chữ */
+  border-radius: 5px; /* Bo tròn góc */
+  cursor: pointer; /* Hiển thị biểu tượng con trỏ */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+/* Hiệu ứng hover */
+.navigation-btn:hover {
+  background-color: #c1970b; /* Màu nền khi hover */
+}
+
+
+/* Style cho thanh phân trang */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pagination-btn {
+  margin: 0 5px;
+  padding: 8px 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #fcc107;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.pagination-btn.active {
+  background-color: #fcc81b;
+  color: rgb(0, 0, 0);
+}
+.pagination-btn:hover {
+  background-color: #b58c04;
+  color: rgb(0, 0, 0);
+} 
+ 

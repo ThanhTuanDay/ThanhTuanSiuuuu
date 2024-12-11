@@ -1,0 +1,135 @@
+
+  /* Container chứa đơn hàng */
+  .order-container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 2px #000000;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: #000000;
+    border-radius: 10px;
+    transform: translateY(20px);
+    animation: slideIn 0.5s ease-out;
+    
+  }
+  
+  /* Tiêu đề đơn hàng */
+  .order-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .order-header h1 {
+    font-size: 28px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .order-id,
+  .order-date {
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  /* Thông tin khách hàng */
+  .customer-info h2 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 8px;
+  }
+  
+  .customer-info table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .customer-info table td {
+    padding: 8px;
+    font-size: 16px;
+    border-bottom: 1px solid #000000;
+  }
+  
+  .customer-info table td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Chi tiết sản phẩm */
+  .order-items h2 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 8px;
+  }
+  
+  .order-items table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border:1px #000000;
+  }
+  
+  .order-items table th,
+  .order-items table td {
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #000000;
+  }
+  
+  .order-items table th {
+    background-color: #fcc107;
+    color: #000000;
+  }
+  
+  .order-items table td {
+    color: #000000;
+  }
+  
+  /* Hiệu ứng sản phẩm */
+  .product-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+  }
+  
+  .product-item.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Tóm tắt đơn hàng */
+  .order-summary h2 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 8px;
+  }
+  
+  .order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-summary table td {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #000000;
+  }
+  
+  .order-summary table th {
+    font-weight: bold;
+    
+    padding: 12px;
+    font-size: 18px;
+    color: #fcc107;
+  }
+  
+  /* T
+  

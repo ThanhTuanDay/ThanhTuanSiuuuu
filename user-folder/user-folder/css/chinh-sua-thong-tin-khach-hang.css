@@ -1,0 +1,86 @@
+.contain-thong-tin {
+    width: 100%; /* Full width of the parent container */
+    max-width: 1400px; /* Maximum width */
+    min-height: 630px; /* Minimum height */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    
+    justify-content: space-between; /* Distribute space between elements */
+    margin: 20px auto; /* Center the container */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+@media (max-width: 1200px) {
+    .contain-thong-tin {
+        padding: 15px; /* Less padding for smaller screens */
+        min-height: 500px; /* Adjust the minimum height */
+    }
+}
+
+@media (max-width: 992px) {
+    .contain-thong-tin {
+        padding: 10px; /* Even less padding for smaller screens */
+        min-height: 450px; /* Adjust minimum height */
+    }
+}
+
+@media (max-width: 768px) {
+    .contain-thong-tin {
+        padding: 10px; /* Further reduce padding */
+        min-height: 400px; /* Adjust the minimum height */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: flex-start; /* Align items at the start */
+    }
+}
+
+@media (max-width: 480px) {
+    .contain-thong-tin {
+        padding: 5px; /* Minimal padding for small screens */
+        min-height: 350px; /* Adjust minimum height */
+    }
+}
+
+
+
+.save-button {
+    background-color: #e68835; /* Màu xanh lá */
+    color: white; /* Màu chữ trắng */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    border: none; /* Loại bỏ viền */
+    border-radius: 8px; /* Bo góc */
+    cursor: pointer; /* Đổi con trỏ khi hover */ 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng mượt khi hover */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.save-button:hover {
+    background-color: #de2a2a; /* Màu xanh đậm hơn khi hover */
+    transform: scale(1.05); /* Tăng nhẹ kích thước khi hover */
+
+}
+
+
+.chinh-sua-h3 {
+    font-size: 30px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    color: #333; /* Màu chữ xám đậm */
+    text-align: center; /* Căn giữa văn bản */
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+    line-height: 1.5; /* Giãn cách dòng */
+    font-family: Arial, sans-serif; /* Đặt kiểu chữ */
+    margin-left: 50px;
+}
+
+
+.contain-thong-tin label {
+    font-weight: bold;
+  
+    color: #333;
+}
