@@ -15,7 +15,7 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="images/favicon.png" type="" />
 
-    <title>Feane - chưa đăng nhập</title>
+    <title>Feane</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -76,32 +76,32 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index-chuadangnhap.html">Trang chủ </a>
+                  <a class="nav-link" href="index.html">Trang chủ </a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="menu-chuadangnhap.html">Thực đơn </a>
+                  <a class="nav-link" href="menu.html">Thực đơn </a>
                   <ul class="dropdown">
-                    <li><a href="pizza-chuadangnhap.html">Pizza</a></li>
-                    <li><a href="hamburger-chuadangnhap.html">Hamburger</a></li>
-                    <li><a href="pasta-chuadangnhap.html">Pasta</a></li>
-                    <li><a href="khoaitaychien-chuadangnhap.html">Khoai tây chiên</a></li>
+                    <li><a href="pizza.html">Pizza</a></li>
+                    <li><a href="hamburger.html">Hamburger</a></li>
+                    <li><a href="pasta.html">Pasta</a></li>
+                    <li><a href="khoaitaychien.html">Khoai tây chiên</a></li>
             
                   </ul>
+                
+
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-chuadangnhap.html">THÔNG TIN LIÊN HỆ</a>
+                  <a class="nav-link" href="about.html">THÔNG TIN LIÊN HỆ</a>
                 </li>
                 
               </ul>
               <div class="user_option">
-                <a href="#" class="user_link">
-                  
+                <a href="thongtinkhachhang.html" class="user_link">
+                  <i class="fa fa-user" aria-hidden="true"></i>
                 </a>
-                
-                <a class="cart_link" href="#" onclick="alert('Bạn cần phải đăng nhập!');">
-                
+                <a class="cart_link" href="./shopping-cart.html">
                   <svg
                     version="1.1"
                     id="Capa_1"
@@ -157,9 +157,8 @@
                   </svg>
                 </a>
                 <!--Thanh tìm kiếm-->
-
                 <div class="search-container">
-                  <form action="timkiemcoban-chuadangnhap.html" method="GET">
+                  <form action="timkiemcoban.html" method="GET">
                       <!-- Ô nhập liệu -->
                       <input 
                           type="text" 
@@ -184,10 +183,10 @@
             
                 <!-- Menu thả xuống -->
                 <ul class="dropdown-menu">
-                    <li><a href="index-chuadangnhap.html">Trang chủ</a></li>
-                    <li><a href="menu-chuadangnhap.html">Menu</a></li>
-                    <li><a href="about-chuadangnhap.html">Thông tin liên hệ</a></li>
-                    <li><a href="login.html">Đăng nhập</a></li>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="menu.html">Thực đơn</a></li>
+                    <li><a href="about.html">Thông tin liên hệ</a></li>
+                    <li><a href="index-chuadangnhap.html">Đăng xuất</a></li>
                     
                 </ul>
             </div>
@@ -212,7 +211,7 @@
         <div class="menu-header">
           <div class="product-filter">
             <h2>Tìm kiếm sản phẩm</h2>
-            <form action="timkiemcoban-chuadangnhap.html" method="get">
+            <form action="timkiemcoban.html" method="get">
               <div class="form-group">
                 <label for="product-type">Loại sản phẩm:</label>
                 <select id="product-type" name="product-type">
@@ -229,13 +228,13 @@
                 <label for="price_all">Tất cả</label>
                 <br>
                 <input type="radio" id="price_low" name="price" value="low">
-                <label for="price_low">30.000đ - 70.000đ</label>
+                <label for="price_low">30.000 VND - 70.000 VND</label>
                 <br>
                 <input type="radio" id="price_medium" name="price" value="medium">
-                <label for="price_medium">70.000đ - 100.000đ</label>
+                <label for="price_medium">70.000 VND - 100.000 VND</label>
                 <br>
                 <input type="radio" id="price_high" name="price" value="high">
-                <label for="price_high">100.000đ trở lên</label>
+                <label for="price_high">100.000 VND trở lên</label>
                 <br>
               </div>
               <button type="submit">Tìm kiếm</button>
@@ -243,261 +242,262 @@
           </div>
         </div>        
           <!-- end of menu header -->
-        <div class="filters-content">
-          <div class="row grid">
 
-            <div class="col-sm-6 col-lg-4 all pizza">
-              <div class="box" data-key="1">
-                <div>
-                  <div class="img-box">
-                    <a href="product-details1-chuadangnhap.html">
-                      <img src="images/f1.png" alt="" />
-                    </a>
+          <div class="filters-content">
+            <div class="row grid">
+  
+              <div class="col-sm-6 col-lg-4 all pizza">
+                <div class="box" data-key="1">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f1.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Pizza hải sản</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>160.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="detail-box">
-                    <h5>Pizza hải sản</h5>
-                    <p>
-                      Pizza hải sản thơm ngon với các loại hải sản tươi như tôm,
-                      cua, giăm bông, và rau củ. Kết hợp cùng sốt Thousand
-                      Island, tạo nên hương vị độc đáo và hấp dẫn cho món ăn.
-                    </p>
-                    <div class="options">
-                      <h6>160.000đ</h6>
-                      <input type="number" class="count" min="1" value="1" />
-                      <button class="add-to-cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 all pizza">
+                <div class="box" data-key="3">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f3.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Pizza phô mai</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>160.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------------------------------------ -->
+              <div class="col-sm-6 col-lg-4 all burger">
+                <div class="box" data-key="2">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f2.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Hamburger đặc biệt</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>60.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-sm-6 col-lg-4 all pasta">
+                <div class="box" data-key="4">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f4.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Pasta đặc biệt</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>60.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 all fries">
+                <div class="box" data-key="5">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f5.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Khoai tây chiên</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>30.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 all pizza">
+                <div class="box" data-key="6">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f6.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Pizza đặc biệt</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>180.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 all burger">
+                <div class="box" data-key="7">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f7.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Hamburger cá</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>60.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 all burger">
+                <div class="box" data-key="8">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f8.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Hamburger gà</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>60.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 all pasta">
+                <div class="box" data-key="9">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f9.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Pasta sốt kem</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>60.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 all pizza">
-              <div class="box" data-key="3">
-                <div>
-                  <div class="img-box">
-                    <a href="product-details1-chuadangnhap.html">
-                      <img src="images/f3.png" alt=""
-                    /></a>
-                  </div>
-                  <div class="detail-box">
-                    <h5>Pizza phô mai</h5>
-                    <p>
-                      Pizza thanh đạm thơm ngon kết hợp với nhiều loại topping
-                      khác nhau như ô liu, ớt chuông, nấm, phô mai, và húng quế.
-                      Tạo nên hương vị thơm ngon cho món ăn
-                    </p>
-                    <div class="options">
-                      <h6>160.000đ</h6>
-                      <input type="number" class="count" min="1" value="1" />
-                      <button class="add-to-cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <!-- ------------------------------------------ -->
-            <div class="col-sm-6 col-lg-4 all burger">
-              <div class="box" data-key="2">
-                <div>
-                  <div class="img-box">
-                    <a href="product-details1-chuadangnhap.html">
-                      <img src="images/f2.png" alt=""
-                    /></a>
-                  </div>
-                  <div class="detail-box">
-                    <h5>Hamburger đặc biệt</h5>
-                    <p>
-                      Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
-                      giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
-                      vị thơm ngon, khó cưỡng.
-                    </p>
-                    <div class="options">
-                      <h6>60.000đ</h6>
-                      <input type="number" class="count" min="1" value="1" />
-                      <button class="add-to-cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-sm-6 col-lg-4 all pasta">
-              <div class="box" data-key="4">
-                <div>
-                  <div class="img-box">
-                    <a href="product-details1-chuadangnhap.html">
-                      <img src="images/f4.png" alt=""
-                    /></a>
-                  </div>
-                  <div class="detail-box">
-                    <h5>Pasta đặc biệt</h5>
-                    <p>
-                      Khoai tây chiên là món ăn rất được mọi người ưa thích, bởi
-                      hương vị thơm ngon. Khoai tây chiên ngon nhất khi có lớp
-                      vỏ ngoài giòn rụm, bên trong thì chín mềm.
-                    </p>
-                    <div class="options">
-                      <h6>60.000đ</h6>
-                      <input type="number" class="count" min="1" value="1" />
-                      <button class="add-to-cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 all fries">
-              <div class="box" data-key="5">
-                <div>
-                  <div class="img-box">
-                    <a href="product-details1-chuadangnhap.html">
-                      <img src="images/f5.png" alt=""
-                    /></a>
-                  </div>
-                  <div class="detail-box">
-                    <h5>Khoai tây chiên</h5>
-                    <p>
-                      Khoai tây chiên là món ăn rất được mọi người ưa thích, bởi
-                      hương vị thơm ngon. Khoai tây chiên ngon nhất khi có lớp
-                      vỏ ngoài giòn rụm, bên trong thì chín mềm.
-                    </p>
-                    <div class="options">
-                      <h6>30.000đ</h6>
-                      <input type="number" class="count" min="1" value="1" />
-                      <button class="add-to-cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 all pizza">
-              <div class="box" data-key="6">
-                <div>
-                  <div class="img-box">
-                    <a href="product-details1-chuadangnhap.html">
-                      <img src="images/f6.png" alt=""
-                    /></a>
-                  </div>
-                  <div class="detail-box">
-                    <h5>Pizza đặc biệt</h5>
-                    <p>
-                      Pizza đặc biệt gồm nhiều nguyên liệu khác nhau . Kết hợp
-                      cùng sốt độc quyền của thương hiệu chúng tôi tạo nên hương
-                      vị độc đáo và hấp dẫn cho món ăn.
-                    </p>
-                    <div class="options">
-                      <h6>160.000đ</h6>
-                      <input type="number" class="count" min="1" value="1" />
-                      <button class="add-to-cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 all burger">
-              <div class="box" data-key="7">
-                <div>
-                  <div class="img-box">
-                    <a href="product-details1-chuadangnhap.html">
-                      <img src="images/f7.png" alt=""
-                    /></a>
-                  </div>
-                  <div class="detail-box">
-                    <h5>Hamburger cá</h5>
-                    <p>
-                      Hamburger cá thơm ngon với nguyên liệu cá tươi chiên giòn.
-                      Kết hợp cùng sốt Thousand Island, tạo nên hương vị độc đáo
-                      và hấp dẫn cho món ăn.
-                    </p>
-                    <div class="options">
-                      <h6>60.000đ</h6>
-                      <input type="number" class="count" min="1" value="1" />
-                      <button class="add-to-cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 all burger">
-              <div class="box" data-key="8">
-                <div>
-                  <div class="img-box">
-                    <a href="product-details1-chuadangnhap.html">
-                      <img src="images/f8.png" alt=""
-                    /></a>
-                  </div>
-                  <div class="detail-box">
-                    <h5>Hamburger gà</h5>
-                    <p>
-                      Hamburger gà thơm ngon với gà chiên mới mỗi ngày. Kết hợp
-                      cùng sốt Thousand Island, tạo nên hương vị độc đáo và hấp
-                      dẫn cho món ăn.
-                    </p>
-                    <div class="options">
-                      <h6>60.000đ</h6>
-                      <input type="number" class="count" min="1" value="1" />
-                      <button class="add-to-cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 all pasta">
-              <div class="box" data-key="9">
-                <div>
-                  <div class="img-box">
-                    <a href="product-details1-chuadangnhap.html">
-                      <img src="images/f9.png" alt=""
-                    /></a>
-                  </div>
-                  <div class="detail-box">
-                    <h5>Pasta sốt kem</h5>
-                    <p>
-                      Pasta sốt kem kèm tôm, cua tươi mới mỗi ngày và các loại rau
-                      củ. Kết hợp cùng sốt Thousand Island, tạo nên hương vị độc
-                      đáo và hấp dẫn cho món ăn.
-                    </p>
-                    <div class="options">
-                      <h6>60.000đ</h6>
-                      <input type="number" class="count" min="1" value="1" />
-                      <button class="add-to-cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-            <!--Nút chuyển trang -->
-          <a href="menu-chuadangnhap.html" class="search.css">
-              <div class="btn-chuyenTrang">
-                <button class="button">1</button>
+              <!--Nút chuyển trang -->
+          <a href="menu.html"class="search.css">
+            <div class="btn-chuyenTrang">
+              <button class="button">1</button>
                 <button class="button">2</button>
                 <button class="button">3</button>
                 <button class="button">...</button>
                 <button class="button">></button>
-              </div>
+            </div>
           </a>
-        
-      </section>
-  
-    <!-- end food section -->
+          
+        </section>
+    
+      <!-- end food section -->
 
     <!-- footer section -->
     <footer class="footer_section">
@@ -526,8 +526,8 @@
             <div class="footer_detail">
               <a href="" class="footer-logo"> Feane </a>
               <p>
-                Necessary, making this the first true generator on the Internet.
-                It uses a dictionary of over 200 Latin words, combined with
+                "Feane - Thế giới ẩm thực đa dạng! Feane đáp ứng mọi sở thích
+                của bạn. Hãy khám phá ngay hôm nay!"
               </p>
               <div class="footer_social">
                 <a href="">
@@ -577,10 +577,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-    <!-- End Google Map -->
-   
+    
+    <!-- script_00 -->
+    <script src="./js/script_00.js"></script>
 
     <!-- font awesome -->
     <script
@@ -588,8 +587,5 @@
       crossorigin="anonymous"
     ></script>
     <!-- End awesome -->
-
-    <script src="./js/script_chuadangnhap.js"></script>
-    
   </body>
 </html>

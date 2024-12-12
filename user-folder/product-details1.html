@@ -44,8 +44,8 @@
     <link rel="stylesheet" href="./css/style_00.css" />
     <!--Search -->
     <link href="css/search.css" rel="stylesheet" />
-    <!-- Style -->
-    <link href="css/style.css" rel="stylesheet" />
+    <!--chi tiet san pham-->
+    <link href="css/chitietsanpham.css" rel="stylesheet" />
   </head>
 
   <body class="sub_page">
@@ -78,16 +78,25 @@
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Trang chủ </a>
                 </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="menu.html">Thực đơn </a>
-                  <span class="sr-only">(current)</span>
-                </li>
                 <li class="nav-item active">
+                  <a class="nav-link" href="menu.html">Thực đơn </a>
+                  <ul class="dropdown">
+                    <li><a href="pizza.html">Pizza</a></li>
+                    <li><a href="hamburger.html">Hamburger</a></li>
+                    <li><a href="pasta.html">Pasta</a></li>
+                    <li><a href="khoaitaychien.html">Khoai tây chiên</a></li>
+            
+                  </ul>
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="about.html">THÔNG TIN LIÊN HỆ</a>
                 </li>
+                
               </ul>
               <div class="user_option">
-                <a href="thongtinkhachhang.html" class="user_link">
+                <a href="" class="user_link">
                   <i class="fa fa-user" aria-hidden="true"></i>
                 </a>
                 <a class="cart_link" href="./shopping-cart.html">
@@ -148,39 +157,38 @@
                 <!--Thanh tìm kiếm-->
                 <div class="search-container">
                   <form action="timkiemcoban.html" method="GET">
-                    <!-- Ô nhập liệu -->
-                    <input
-                      type="text"
-                      name="query"
-                      placeholder="Tìm kiếm"
-                      required
-                      class="search-input"
-                    />
-
-                    <!-- Nút tìm kiếm -->
-                    <button
-                      class="btn my-2 my-sm-0 nav_search-btn"
-                      type="submit"
-                    >
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
+                      <!-- Ô nhập liệu -->
+                      <input 
+                          type="text" 
+                          name="query" 
+                          placeholder="Tìm kiếm" 
+                          required 
+                          class="search-input">
+              
+                      <!-- Nút tìm kiếm -->
+                      <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                      </button>
                   </form>
-                </div>
+              </div>
 
-                <!--Dấu 3 gạch-->
-                <div class="nav-bar">
-                  <!-- Nút ba gạch -->
-                  <button class="menu-btn">
+              <!--Dấu 3 gạch-->
+              <div class="nav-bar">
+                <!-- Nút ba gạch -->
+                <button class="menu-btn">
                     <i class="fa-solid fa-bars"></i>
-                  </button>
-
-                  <!-- Menu thả xuống -->
-                  <ul class="dropdown-menu">
+                </button>
+            
+                <!-- Menu thả xuống -->
+                <ul class="dropdown-menu">
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="menu.html">Thực đơn</a></li>
+                    <li><a href="menu.html">Menu</a></li>
                     <li><a href="about.html">Thông tin liên hệ</a></li>
-                    <li><a href="login.html">Đăng xuất</a></li>
-                  </ul>
+                    <li><a href="index-chuadangnhap.html">Đăng xuất</a></li>
+                    
+                </ul>
+            </div>
+            
               </div>
             </div>
           </nav>
@@ -188,38 +196,61 @@
       </header>
       <!-- end header section -->
     </div>
+    <!-- food section -->
 
-    <!-- about section -->
-
-    <section class="about_section layout_padding">
+    <section class="food_section layout_padding">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/about-img.png" alt="" />
-            </div>
+        <div class="heading_container heading_center">
+          <h2>Menu</h2>
+        </div>
+
+        <div class="product-detail-container">
+          <!-- Hình ảnh sản phẩm -->
+          <div class="product-image">
+            <img src="images/f1.png" alt="Pizza hải sản" />
           </div>
-          <div class="col-md-6">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>Feane Xin Chào!</h2>
-              </div>
-              <p>
-                "Feane - Hương vị tươi mới mỗi ngày! Với những nguyên liệu tươi
-                ngon nhất, Feane mang đến cho bạn những món ăn nhanh thật sự
-                khác biệt. Cảm nhận vị ngon trọn vẹn trong từng miếng cắn!"
-              </p>
-              <a href="index.html"> Đọc thêm </a>
+
+          <!-- Thông tin sản phẩm -->
+          <div class="product-info">
+            <h1>Pizza hải sản</h1>
+            <!-- <strong>ID: PZ01</strong> -->
+            <p class="description">
+              Pizza hải sản thơm ngon với các loại hải sản tươi như tôm, cua,
+              giăm bông, và rau củ. Kết hợp cùng sốt Thousand Island, tạo nên
+              hương vị độc đáo và hấp dẫn cho món ăn.
+            </p>
+            
+            <p class="ingredients">
+       
+            </p>
+            <p class="ingredients"><strong>Lượt mua: </strong>8k</p>
+            <!--Đánh giá sản phẩm-->
+            <p class="ingredients">
+              <strong>Đánh giá: </strong>4.9
+              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            </p>
+            <!-- Nút thêm vào giỏ hàng và số lượng -->
+            <p class="price">160.000 VND</p>
+            <div class="purchase-section">
+
+              <input type="number" value="1" min="1" class="quantity-input" />
+
+              <button class="add-to-cart" onclick="showAlert()">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+
+              <script>
+                function showAlert() {
+                    alert('Sản phẩm đã được thêm vào giỏ hàng!');
+                }
+              </script>
+
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- end about section -->
-
-     <!-- footer section -->
-     <footer class="footer_section">
+    <footer class="footer_section">
       <div class="container">
         <div class="row">
           <div class="col-md-4 footer-col">
@@ -228,7 +259,10 @@
               <div class="contact_link_box">
                 <a href="">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span>Địa chỉ: 277 Đường An Dương Vương, Phường 3, Quận 5, TP Hồ Chí Minh </span>
+                  <span
+                    >Địa chỉ: 277 Đường An Dương Vương, Phường 3, Quận 5, TP Hồ
+                    Chí Minh
+                  </span>
                 </a>
                 <a href="">
                   <i class="fa fa-phone" aria-hidden="true"></i>
@@ -268,42 +302,21 @@
             </div>
           </div>
           <div class="col-md-4 footer-col">
-            <h4>Thời gian mở cửa: </h4>
+            <h4>Thời gian mở cửa:</h4>
             <p>Hằng ngày</p>
             <p>10 giờ - 22 giờ</p>
           </div>
         </div>
-        
       </div>
     </footer>
     <!-- footer section -->
-<!-- jQery -->
-<script src="js/jquery-3.4.1.min.js"></script>
-<!-- popper js -->
-<script
-  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"
-></script>
-<!-- bootstrap js -->
-<script src="js/bootstrap.js"></script>
-<!-- owl slider -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<!-- isotope js -->
-<script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
-<!-- nice select -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-<!-- custom js -->
-<script src="js/custom.js"></script>
+    <!--Lệnh dùng icons-->
+    <script
+      src="https://kit.fontawesome.com/9161516dbf.js"
+      crossorigin="anonymous"
+    ></script>
 
-<!-- script_00 -->
-<script src="./js/script_00.js"></script>
+    <!-- <script src="./js/script_00.js"></script> -->
 
-<!-- font awesome -->
-<script
-  src="https://kit.fontawesome.com/e6a20b8e66.js"
-  crossorigin="anonymous"
-></script>
-<!-- End awesome -->
-</body>
+  </body>
 </html>

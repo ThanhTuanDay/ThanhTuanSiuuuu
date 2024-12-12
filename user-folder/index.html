@@ -15,7 +15,7 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="images/favicon.png" type="" />
 
-    <title>Feane - chưa đăng nhập</title>
+    <title>Feane</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -53,7 +53,6 @@
       <div class="bg-box">
         <img src="images/hero-bg.jpg" alt="" />
       </div>
-      
       <header class="header_section">
         <div class="container">
           <nav class="navbar navbar-expand-lg custom_nav-container">
@@ -78,19 +77,18 @@
                   <a class="nav-link" href="index.html">Trang chủ </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="menu-chuadangnhap.html"
-                    >Thực đơn
-                  </a>
+                  <a class="nav-link" href="menu.html">Thực đơn </a>
                   <span class="sr-only">(current)</span>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-chuadangnhap.html"
-                    >THÔNG TIN LIÊN HỆ</a
-                  >
+                  <a class="nav-link" href="about.html">THÔNG TIN LIÊN HỆ</a>
                 </li>
               </ul>
               <div class="user_option">
-                <a class="cart_link" href="#" onclick="alert('Bạn cần phải đăng nhập!');">
+                <a href="thongtinkhachhang.html" class="user_link">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+                <a class="cart_link" href="./shopping-cart.html">
                   <svg
                     version="1.1"
                     id="Capa_1"
@@ -147,7 +145,7 @@
                 </a>
                 <!--Thanh tìm kiếm-->
                 <div class="search-container">
-                  <form action="timkiemcoban-chuadangnhap.html" method="GET">
+                  <form action="timkiemcoban.html" method="GET">
                     <!-- Ô nhập liệu -->
                     <input
                       type="text"
@@ -176,12 +174,10 @@
 
                   <!-- Menu thả xuống -->
                   <ul class="dropdown-menu">
-                    <li><a href="index-chuadangnhap.html">Trang chủ</a></li>
-                    <li><a href="menu-chuadangnhap.html">Thực đơn</a></li>
-                    <li>
-                      <a href="about-chuadangnhap.html">Thông tin liên hệ</a>
-                    </li>
-                    <li><a href="login.html">Đăng nhập</a></li>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="menu.html">Thực đơn</a></li>
+                    <li><a href="about.html">Thông tin liên hệ</a></li>
+                    <li><a href="index-chuadangnhap.html">Đăng xuất</a></li>
                   </ul>
                 </div>
               </div>
@@ -285,7 +281,7 @@
                 <div class="detail-box">
                   <h5>Tasty Thursdays</h5>
                   <h6><span>20%</span> Off</h6>
-                  <a href="menu-chuadangnhap.html">
+                  <a href="menu.html">
                     Đặt hàng ngay
                     <svg
                       version="1.1"
@@ -352,7 +348,7 @@
                 <div class="detail-box">
                   <h5>Pizza Days</h5>
                   <h6><span>15%</span> Off</h6>
-                  <a href="menu-chuadangnhap.html">
+                  <a href="menu.html">
                     Đặt hàng ngay
                     <svg
                       version="1.1"
@@ -430,7 +426,7 @@
       <div class="menu-header">
         <div class="product-filter">
           <h2>Tìm kiếm sản phẩm</h2>
-          <form action="" method="get">
+          <form action="timkiemcoban.html" method="get">
             <div class="form-group">
               <label for="product-type">Loại sản phẩm:</label>
               <select id="product-type" name="product-type">
@@ -453,7 +449,7 @@
               <label for="price_all">Tất cả</label>
               <br />
               <input type="radio" id="price_low" name="price" value="low" />
-              <label for="price_low">30.000đ - 70.000đ</label>
+              <label for="price_low">30.000 VND - 70.000 VND</label>
               <br />
               <input
                 type="radio"
@@ -461,10 +457,10 @@
                 name="price"
                 value="medium"
               />
-              <label for="price_medium">70.000đ - 100.000đ</label>
+              <label for="price_medium">70.000 VND - 100.000 VND</label>
               <br />
               <input type="radio" id="price_high" name="price" value="high" />
-              <label for="price_high">100.000đ trở lên</label>
+              <label for="price_high">100.000 VND trở lên</label>
               <br />
             </div>
             <button type="submit">Tìm kiếm</button>
@@ -480,7 +476,7 @@
             <div class="box" data-key="1">
               <div>
                 <div class="img-box">
-                  <a href="product-details1-chuadangnhap.html">
+                  <a href="product-details1.html">
                     <img src="images/f1.png" alt="" />
                   </a>
                 </div>
@@ -492,7 +488,7 @@
                     thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
                   </p>
                   <div class="options">
-                    <h6>160.000đ</h6>
+                    <h6>160.000 VND</h6>
                     <input type="number" class="count" min="1" value="1" />
                     <button class="add-to-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -506,7 +502,7 @@
             <div class="box" data-key="3">
               <div>
                 <div class="img-box">
-                  <a href="product-details1-chuadangnhap.html">
+                  <a href="product-details1.html">
                     <img src="images/f3.png" alt=""
                   /></a>
                 </div>
@@ -518,7 +514,7 @@
                     thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
                   </p>
                   <div class="options">
-                    <h6>160.000đ</h6>
+                    <h6>160.000 VND</h6>
                     <input type="number" class="count" min="1" value="1" />
                     <button class="add-to-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -533,7 +529,7 @@
             <div class="box" data-key="2">
               <div>
                 <div class="img-box">
-                  <a href="product-details1-chuadangnhap.html">
+                  <a href="product-details1.html">
                     <img src="images/f2.png" alt=""
                   /></a>
                 </div>
@@ -545,7 +541,7 @@
                     thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
                   </p>
                   <div class="options">
-                    <h6>60.000đ</h6>
+                    <h6>60.000 VND</h6>
                     <input type="number" class="count" min="1" value="1" />
                     <button class="add-to-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -560,7 +556,7 @@
             <div class="box" data-key="4">
               <div>
                 <div class="img-box">
-                  <a href="product-details1-chuadangnhap.html">
+                  <a href="product-details1.html">
                     <img src="images/f4.png" alt=""
                   /></a>
                 </div>
@@ -572,7 +568,7 @@
                     thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
                   </p>
                   <div class="options">
-                    <h6>60.000đ</h6>
+                    <h6>60.000 VND</h6>
                     <input type="number" class="count" min="1" value="1" />
                     <button class="add-to-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -586,7 +582,7 @@
             <div class="box" data-key="5">
               <div>
                 <div class="img-box">
-                  <a href="product-details1-chuadangnhap.html">
+                  <a href="product-details1.html">
                     <img src="images/f5.png" alt=""
                   /></a>
                 </div>
@@ -598,7 +594,7 @@
                     thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
                   </p>
                   <div class="options">
-                    <h6>30.000đ</h6>
+                    <h6>30.000 VND</h6>
                     <input type="number" class="count" min="1" value="1" />
                     <button class="add-to-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -612,7 +608,7 @@
             <div class="box" data-key="6">
               <div>
                 <div class="img-box">
-                  <a href="product-details1-chuadangnhap.html">
+                  <a href="product-details1.html">
                     <img src="images/f6.png" alt=""
                   /></a>
                 </div>
@@ -624,7 +620,7 @@
                     thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
                   </p>
                   <div class="options">
-                    <h6>180.000đ</h6>
+                    <h6>180.000 VND</h6>
                     <input type="number" class="count" min="1" value="1" />
                     <button class="add-to-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -638,7 +634,7 @@
             <div class="box" data-key="7">
               <div>
                 <div class="img-box">
-                  <a href="product-details1-chuadangnhap.html">
+                  <a href="product-details1.html">
                     <img src="images/f7.png" alt=""
                   /></a>
                 </div>
@@ -650,7 +646,7 @@
                     thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
                   </p>
                   <div class="options">
-                    <h6>60.000đ</h6>
+                    <h6>60.000 VND</h6>
                     <input type="number" class="count" min="1" value="1" />
                     <button class="add-to-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -664,7 +660,7 @@
             <div class="box" data-key="8">
               <div>
                 <div class="img-box">
-                  <a href="product-details1-chuadangnhap.html">
+                  <a href="product-details1.html">
                     <img src="images/f8.png" alt=""
                   /></a>
                 </div>
@@ -676,7 +672,7 @@
                     thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
                   </p>
                   <div class="options">
-                    <h6>60.000đ</h6>
+                    <h6>60.000 VND</h6>
                     <input type="number" class="count" min="1" value="1" />
                     <button class="add-to-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -690,7 +686,7 @@
             <div class="box" data-key="9">
               <div>
                 <div class="img-box">
-                  <a href="product-details1-chuadangnhap.html">
+                  <a href="product-details1.html">
                     <img src="images/f9.png" alt=""
                   /></a>
                 </div>
@@ -702,7 +698,7 @@
                     thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
                   </p>
                   <div class="options">
-                    <h6>60.000đ</h6>
+                    <h6>60.000 VND</h6>
                     <input type="number" class="count" min="1" value="1" />
                     <button class="add-to-cart">
                       <i class="fa-solid fa-cart-shopping"></i>
@@ -715,7 +711,7 @@
         </div>
       </div>
       <!--Nút chuyển trang -->
-      <a href="index-chuadangnhap.html" class="search.css">
+      <a href="index.html" class="search.css">
         <div class="btn-chuyenTrang">
           <button class="button">1</button>
           <button class="button">2</button>
@@ -839,8 +835,9 @@
     <!-- custom js -->
     <script src="js/custom.js"></script>
 
-    <!-- script_chuadanhnhap -->
-    <script src="./js/script_chuadangnhap.js"></script>
+    <!-- script_00 -->
+    <script src="./js/script_00.js"></script>
+
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/e6a20b8e66.js"

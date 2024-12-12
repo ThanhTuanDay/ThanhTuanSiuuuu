@@ -44,8 +44,8 @@
     <link rel="stylesheet" href="./css/style_00.css" />
     <!--Search -->
     <link href="css/search.css" rel="stylesheet" />
-    <!--chi tiet san pham-->
-    <link href="css/chitietsanpham.css" rel="stylesheet" />
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body class="sub_page">
@@ -87,6 +87,8 @@
                     <li><a href="khoaitaychien.html">Khoai tây chiên</a></li>
             
                   </ul>
+                
+
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
@@ -96,7 +98,7 @@
                 
               </ul>
               <div class="user_option">
-                <a href="" class="user_link">
+                <a href="thongtinkhachhang.html" class="user_link">
                   <i class="fa fa-user" aria-hidden="true"></i>
                 </a>
                 <a class="cart_link" href="./shopping-cart.html">
@@ -184,7 +186,7 @@
                     <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="about.html">Thông tin liên hệ</a></li>
-                    <li><a href="login.html">Đăng nhập/Đăng xuất</a></li>
+                    <li><a href="index-chuadangnhap.html">Đăng xuất</a></li>
                     
                 </ul>
             </div>
@@ -196,60 +198,124 @@
       </header>
       <!-- end header section -->
     </div>
+    
     <!-- food section -->
-
     <section class="food_section layout_padding">
       <div class="container">
         <div class="heading_container heading_center">
-          <h2>Menu</h2>
-        </div>
-
-        <div class="product-detail-container">
-          <!-- Hình ảnh sản phẩm -->
-          <div class="product-image">
-            <img src="images/f1.png" alt="Pizza hải sản" />
-          </div>
-
-          <!-- Thông tin sản phẩm -->
-          <div class="product-info">
-            <h1>Pizza hải sản</h1>
-            <p class="price">160.000đ</p>
-            <p class="description">
-              Pizza hải sản thơm ngon với các loại hải sản tươi như tôm, cua,
-              giăm bông, và rau củ. Kết hợp cùng sốt Thousand Island, tạo nên
-              hương vị độc đáo và hấp dẫn cho món ăn.
-            </p>
-
-            <p class="ingredients">
-              <strong>Thành phần:</strong> Bột mì, tôm, cua, giăm bông, phô mai
-              mozzarella, sốt Thousand Island, hành tây, ớt chuông.
-            </p>
-            <p class="ingredients"><strong>Lượt mua: </strong>8k</p>
-            <!--Đánh giá sản phẩm-->
-            <p class="ingredients">
-              <strong>Đánh giá: </strong>4.9
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-            </p>
-            <!-- Nút thêm vào giỏ hàng và số lượng -->
-            <div class="purchase-section">
-
-              <input type="number" value="1" min="1" class="quantity-input" />
-
-              <button class="add-to-cart" onclick="showAlert()">
-                  <i class="fa-solid fa-cart-shopping"></i>
-              </button>
-
-              <script>
-                function showAlert() {
-                    alert('Sản phẩm đã được thêm vào giỏ hàng!');
-                }
-              </script>
-
-            </div>
-          </div>
+          <h2>Pizza</h2>
         </div>
       </div>
-    </section>
+
+        <!--Open Menu header -->
+        <div class="menu-header">
+          <div class="product-filter">
+            <h2>Tìm kiếm sản phẩm</h2>
+            <form action="timkiemcoban.html" method="get">
+              <div class="form-group">
+                <label for="product-type">Loại sản phẩm:</label>
+                <select id="product-type" name="product-type">
+                  <option value="all">Tất cả</option>
+                  <option value="hamburger">Hamburger</option>
+                  <option value="pizza">Pizza</option>
+                  <option value="pasta">Pasta</option>
+                  <option value="fries">Khoai tây chiên</option>
+                </select>
+              </div>
+              <label for="price">Giá:</label>
+              <div>
+                <input type="radio" id="price_all" name="price" value="all" checked>
+                <label for="price_all">Tất cả</label>
+                <br>
+                <input type="radio" id="price_low" name="price" value="low">
+                <label for="price_low">30.000 VND - 70.000 VND</label>
+                <br>
+                <input type="radio" id="price_medium" name="price" value="medium">
+                <label for="price_medium">70.000 VND - 100.000 VND</label>
+                <br>
+                <input type="radio" id="price_high" name="price" value="high">
+                <label for="price_high">100.000 VND trở lên</label>
+                <br>
+              </div>
+              <button type="submit">Tìm kiếm</button>
+            </form>
+          </div>
+        </div>        
+          <!-- end of menu header -->
+
+          <div class="filters-content">
+            <div class="row grid">
+  
+              <div class="col-sm-6 col-lg-4 all pizza">
+                <div class="box" data-key="1">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f1.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Pizza hải sản</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>160.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 all pizza">
+                <div class="box" data-key="3">
+                  <div>
+                    <div class="img-box">
+                      <a href="product-details1.html">
+                        <img src="images/f3.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="detail-box">
+                      <h5>Pizza phô mai</h5>
+                      <p>
+                        Hamburger bò đặc biệt bao gồm bánh mì kẹp thịt bò xay ở
+                        giữa. Miếng thịt có thể được nướng trên lửa tạo nên hương
+                        vị thơm ngon, khó cưỡng. Tạo nên hương vị thơm ngon.
+                      </p>
+                      <div class="options">
+                        <h6>160.000 VND</h6>
+                        <input type="number" class="count" min="1" value="1" />
+                        <button class="add-to-cart">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+              <!--Nút chuyển trang -->
+          <a href="pizza.html"class="search.css">
+            <div class="btn-chuyenTrang">
+              <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button">...</button>
+                <button class="button">></button>
+            </div>
+          </a>
+          
+        </section>
+    
+      <!-- end food section -->
+
+    <!-- footer section -->
     <footer class="footer_section">
       <div class="container">
         <div class="row">
@@ -259,10 +325,7 @@
               <div class="contact_link_box">
                 <a href="">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <span
-                    >Địa chỉ: 277 Đường An Dương Vương, Phường 3, Quận 5, TP Hồ
-                    Chí Minh
-                  </span>
+                  <span>Địa chỉ: 277 Đường An Dương Vương, Phường 3, Quận 5, TP Hồ Chí Minh </span>
                 </a>
                 <a href="">
                   <i class="fa fa-phone" aria-hidden="true"></i>
@@ -302,21 +365,43 @@
             </div>
           </div>
           <div class="col-md-4 footer-col">
-            <h4>Thời gian mở cửa:</h4>
+            <h4>Thời gian mở cửa: </h4>
             <p>Hằng ngày</p>
             <p>10 giờ - 22 giờ</p>
           </div>
         </div>
+        
       </div>
     </footer>
     <!-- footer section -->
-    <!--Lệnh dùng icons-->
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
     <script
-      src="https://kit.fontawesome.com/9161516dbf.js"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    
+    <!-- script_00 -->
+    <script src="./js/script_00.js"></script>
 
-    <!-- <script src="./js/script_00.js"></script> -->
-
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/e6a20b8e66.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End awesome -->
   </body>
 </html>

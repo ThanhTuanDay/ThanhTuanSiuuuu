@@ -260,6 +260,7 @@ body.sidebar-collapsed .sidebar-brand-image {
     font-size: 30px; 
     color:#ffc107;  
     letter-spacing: 2px;
+    text-decoration: none;
 }
 .sidebar-menu-wrapper {
     height: 100%;
